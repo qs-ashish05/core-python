@@ -1,0 +1,12 @@
+wandb_version: 1
+
+batch_size:
+  value: 8
+epochs:
+  value: 5
+hidden_nodes:
+  value: 128
+img_size:
+  value: 16
+learning_rate:
+  value: 0.001

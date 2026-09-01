@@ -1,0 +1,52 @@
+Found 3670 files belonging to 5 classes.
+/media/qs-ashish/DATA/ashish/core-python/.venv/lib/python3.10/site-packages/keras/src/layers/reshaping/flatten.py:37: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(**kwargs)
+Epoch 1/5
+[1m23/92[0m [32m━━━━━[0m[37m━━━━━━━━━━━━━━━[0m [1m11s[0m 161ms/step - accuracy: 0.2210 - loss: 15893.6514{"variables": [{"name": "Special Variables", "value": "", "type": "", "variablesReference": 123811276322304, "evaluateName": "__jupyter_debug_group__:{\"parent\":null,\"scope\":\"Special Variables\"}"}, {"name": "API_KEY", "value": "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", "type": "str", "variablesReference": 0, "evaluateName": "API_KEY", "presentationHint": {"attributes": ["rawString"]}}, {"name": "sweep_config", "value": "{'method': 'grid', 'metric': {'goal': 'maximize', 'name': 'val_accuracy'}, 'parameters': {'batch_size': {'values': [8, 16]}, 'epochs': {'values': [5, 10]}, 'hidden_nodes': {'values': [128, 64]}, 'img_size': {'values': [16, 224]}, 'learning_rate': {'values': [0.001, 0.01]}}}", "type": "dict", "variablesReference": 123811295973696, "evaluateName": "sweep_config", "presentationHint": {"attributes": ["shape: 3"]}}, {"name": "sweep_id", "value": "eidxiusx", "type": "str", "variablesReference": 0, "evaluateName": "sweep_id", "presentationHint": {"attributes": ["rawString"]}}]}
+[34m[1mwandb[0m: Ctrl + C detected. Stopping sweep.
+[1m87/92[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m0s[0m 144ms/step - accuracy: 0.2653 - loss: 8074.5551
+Traceback (most recent call last):
+  File "/tmp/ipykernel_7873/2712645763.py", line 39, in train
+    model.fit(
+  File "/media/qs-ashish/DATA/ashish/core-python/.venv/lib/python3.10/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/media/qs-ashish/DATA/ashish/core-python/.venv/lib/python3.10/site-packages/wandb/sdk/lib/console_capture.py", line 184, in write_with_callbacks
+    n = orig_write(s)
+  File "/media/qs-ashish/DATA/ashish/core-python/.venv/lib/python3.10/site-packages/ipykernel/iostream.py", line 775, in write
+    self._schedule_flush()
+  File "/media/qs-ashish/DATA/ashish/core-python/.venv/lib/python3.10/site-packages/ipykernel/iostream.py", line 671, in _schedule_flush
+    self.pub_thread.schedule(_schedule_in_thread)
+  File "/media/qs-ashish/DATA/ashish/core-python/.venv/lib/python3.10/site-packages/ipykernel/iostream.py", line 342, in schedule
+    self._event_pipe.send(b"")
+  File "/media/qs-ashish/DATA/ashish/core-python/.venv/lib/python3.10/site-packages/zmq/sugar/socket.py", line 713, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "zmq/backend/cython/_zmq.py", line 1152, in zmq.backend.cython._zmq.Socket.send
+  File "zmq/backend/cython/_zmq.py", line 1194, in zmq.backend.cython._zmq.Socket.send
+  File "zmq/backend/cython/_zmq.py", line 1339, in zmq.backend.cython._zmq._check_closed
+zmq.error.ZMQError: Socket operation on non-socket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/qs-ashish/DATA/ashish/core-python/.venv/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 341, in _run_job
+    self._function()
+  File "/tmp/ipykernel_7873/2712645763.py", line 2, in train
+    with wandb.init() as run:
+  File "/media/qs-ashish/DATA/ashish/core-python/.venv/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 3695, in __exit__
+    traceback.print_exception(exc_type, exc_val, exc_tb)
+  File "/usr/lib/python3.10/traceback.py", line 121, in print_exception
+    print(line, file=file, end="")
+  File "/media/qs-ashish/DATA/ashish/core-python/.venv/lib/python3.10/site-packages/wandb/sdk/lib/console_capture.py", line 184, in write_with_callbacks
+    n = orig_write(s)
+  File "/media/qs-ashish/DATA/ashish/core-python/.venv/lib/python3.10/site-packages/ipykernel/iostream.py", line 775, in write
+    self._schedule_flush()
+  File "/media/qs-ashish/DATA/ashish/core-python/.venv/lib/python3.10/site-packages/ipykernel/iostream.py", line 671, in _schedule_flush
+    self.pub_thread.schedule(_schedule_in_thread)
+  File "/media/qs-ashish/DATA/ashish/core-python/.venv/lib/python3.10/site-packages/ipykernel/iostream.py", line 342, in schedule
+    self._event_pipe.send(b"")
+  File "/media/qs-ashish/DATA/ashish/core-python/.venv/lib/python3.10/site-packages/zmq/sugar/socket.py", line 713, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "zmq/backend/cython/_zmq.py", line 1152, in zmq.backend.cython._zmq.Socket.send
+  File "zmq/backend/cython/_zmq.py", line 1194, in zmq.backend.cython._zmq.Socket.send
+  File "zmq/backend/cython/_zmq.py", line 1339, in zmq.backend.cython._zmq._check_closed
+zmq.error.ZMQError: Socket operation on non-socket

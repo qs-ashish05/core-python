@@ -1,0 +1,20 @@
+{"time":"2026-08-31T20:53:01.068380957+05:30","level":"INFO","msg":"wandb-core"}
+{"time":"2026-08-31T20:53:01.069270868+05:30","level":"INFO","msg":"stream: starting","core version":"0.29.0"}
+{"time":"2026-08-31T20:53:01.177955118+05:30","level":"INFO","msg":"stream: created new stream","id":"fkr8ybnm"}
+{"time":"2026-08-31T20:53:01.178267081+05:30","level":"INFO","msg":"handler: started"}
+{"time":"2026-08-31T20:53:01.178634073+05:30","level":"INFO","msg":"stream: started"}
+{"time":"2026-08-31T20:53:01.178687481+05:30","level":"INFO","msg":"sender: started"}
+{"time":"2026-08-31T20:53:01.178680336+05:30","level":"INFO","msg":"writer: started","stream_id":"fkr8ybnm"}
+{"time":"2026-08-31T20:53:10.120774265+05:30","level":"INFO","msg":"filestream: sending request","total_files":1,"console_offset":0,"console_lines":1}
+{"time":"2026-08-31T20:53:12.468793521+05:30","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-08-31T20:53:25.122011639+05:30","level":"INFO","msg":"filestream: sending request","total_files":3,"history_offset":0,"history_lines":100,"console_offset":1,"console_lines":12,"uploaded_len":3}
+{"time":"2026-08-31T20:53:25.666112241+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-08-31T20:53:26.713575381+05:30","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-08-31T20:53:26.713910917+05:30","level":"INFO","msg":"filestream: sending request","total_files":0,"uploaded_len":2,"complete":true,"exit_code":0}
+{"time":"2026-08-31T20:53:27.313592544+05:30","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-08-31T20:53:27.314837228+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-08-31T20:53:27.319283085+05:30","level":"INFO","msg":"stream: finishing up"}
+{"time":"2026-08-31T20:53:27.319362137+05:30","level":"INFO","msg":"handler: closed"}
+{"time":"2026-08-31T20:53:27.319613064+05:30","level":"INFO","msg":"sender: closed"}
+{"time":"2026-08-31T20:53:27.319637946+05:30","level":"INFO","msg":"stream: all finished"}
+{"time":"2026-08-31T20:53:29.319958734+05:30","level":"ERROR","msg":"stream: failed to shut down analytics","error":"shutdown errors: [context deadline exceeded]"}

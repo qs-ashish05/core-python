@@ -1,0 +1,13 @@
+Found 3670 files belonging to 5 classes.
+/media/qs-ashish/DATA/ashish/core-python/.venv/lib/python3.10/site-packages/keras/src/layers/reshaping/flatten.py:37: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(**kwargs)
+Epoch 1/5
+[1m92/92[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m17s[0m 166ms/step - accuracy: 0.3013 - loss: 4530.6938 - val_accuracy: 0.3494 - val_loss: 2359.2036
+Epoch 2/5
+[1m92/92[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m16s[0m 159ms/step - accuracy: 0.3701 - loss: 1481.0137 - val_accuracy: 0.4091 - val_loss: 1077.3071
+Epoch 3/5
+[1m92/92[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m15s[0m 155ms/step - accuracy: 0.4209 - loss: 1114.9965 - val_accuracy: 0.4602 - val_loss: 866.2678
+Epoch 4/5
+[1m92/92[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m16s[0m 157ms/step - accuracy: 0.4151 - loss: 1109.0106 - val_accuracy: 0.3363 - val_loss: 1619.3695
+Epoch 5/5
+[1m92/92[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m15s[0m 154ms/step - accuracy: 0.4438 - loss: 882.7159 - val_accuracy: 0.5468 - val_loss: 492.9965

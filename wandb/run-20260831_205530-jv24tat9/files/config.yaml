@@ -1,0 +1,82 @@
+_wandb:
+    value:
+        cli_version: 0.29.0
+        e:
+            52fkrqymkc28me57meei4w6q5hz3klhk:
+                args:
+                    - -f
+                    - /tmp/kernel-fe21b170-c9fd-42e1-bd19-b815855671f716032225427724213505/connection.json
+                    - --IPCompleter.use_jedi=False
+                    - --IPKernelApp.log_level=INFO
+                cpu_count: 4
+                cpu_count_logical: 8
+                cudaVersion: "12.2"
+                disk:
+                    /:
+                        total: "502392610816"
+                        used: "164169748480"
+                email: 220ashish0019@dbit.in
+                executable: /media/qs-ashish/DATA/ashish/core-python/.venv/bin/python
+                git:
+                    commit: ad52823eb78806404e0569f23ca261d924802e28
+                    remote: git@github.com:qs-ashish05/core-python.git
+                gpu: NVIDIA GeForce MX330
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Pascal
+                      cudaCores: 384
+                      memoryTotal: "2147483648"
+                      name: NVIDIA GeForce MX330
+                      uuid: GPU-a98cfc93-05b4-06de-c5e2-f64c10dd1ea2
+                host: ashish
+                memory:
+                    total: "16484474880"
+                os: Linux-6.8.0-138-generic-x86_64-with-glibc2.35
+                program: <python with no main file>
+                python: CPython 3.10.12
+                root: /media/qs-ashish/DATA/ashish/core-python
+                startedAt: "2026-08-31T15:25:30.160190Z"
+                writerId: 52fkrqymkc28me57meei4w6q5hz3klhk
+        m:
+            - "1": batch/batch_step
+              "6":
+                - 3
+              "7": []
+            - "2": batch/*
+              "5": 1
+              "6":
+                - 1
+              "7": []
+        python_version: 3.10.12
+        t:
+            "1":
+                - 2
+                - 3
+                - 5
+                - 53
+            "2":
+                - 2
+                - 3
+                - 5
+                - 53
+            "3":
+                - 2
+                - 7
+                - 14
+                - 38
+            "4": 3.10.12
+            "5": 0.29.0
+            "8":
+                - 13
+            "12": 0.29.0
+            "13": linux-x86_64
+batch_size:
+    value: 8
+epochs:
+    value: 5
+hidden_nodes:
+    value: 128
+img_size:
+    value: 224
+learning_rate:
+    value: 0.01

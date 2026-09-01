@@ -1,0 +1,4 @@
+link to download the flower dataset
+
+- https://storage.googleapis.com/download.tensorflow.org/example_images/flower_photos.tgz
+- https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive/08_image/labs/flowers_fromscratch.ipynb

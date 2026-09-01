@@ -1,0 +1,22 @@
+Found 3670 files belonging to 5 classes.
+E0000 00:00:1788189662.046994   11078 cuda_executor.cc:1737] INTERNAL: CUDA Runtime error: Failed call to cudaGetRuntimeVersion: Error loading CUDA libraries. GPU will not be used.: Error loading CUDA libraries. GPU will not be used.
+W0000 00:00:1788189662.047241   11145 cuda_executor.cc:1755] Failed to determine cuDNN version (Note that this is expected if the application doesn't link the cuDNN plugin): INTERNAL: cuDNN error: CUDNN_STATUS_INTERNAL_ERROR
+W0000 00:00:1788189662.079811   11078 gpu_device.cc:2365] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+/media/qs-ashish/DATA/ashish/core-python/.venv/lib/python3.10/site-packages/keras/src/layers/reshaping/flatten.py:37: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(**kwargs)
+Epoch 1/5
+I0000 00:00:1788189673.458752   11176 shuffle_dataset_op.cc:453] ShuffleDatasetV3:7: Filling up shuffle buffer (this may take a while): 14 of 100
+I0000 00:00:1788189693.871910   11176 shuffle_dataset_op.cc:453] ShuffleDatasetV3:7: Filling up shuffle buffer (this may take a while): 44 of 100
+I0000 00:00:1788189714.052633   11176 shuffle_dataset_op.cc:453] ShuffleDatasetV3:7: Filling up shuffle buffer (this may take a while): 73 of 100
+I0000 00:00:1788189724.089777   11176 shuffle_dataset_op.cc:453] ShuffleDatasetV3:7: Filling up shuffle buffer (this may take a while): 87 of 100
+I0000 00:00:1788189733.190511   11176 shuffle_dataset_op.cc:483] Shuffle buffer filled.
+[1m92/92[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m83s[0m 110ms/step - accuracy: 0.2972 - loss: 47.5330 - val_accuracy: 0.3778 - val_loss: 16.5457
+Epoch 2/5
+[1m92/92[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 14ms/step - accuracy: 0.3579 - loss: 13.4695 - val_accuracy: 0.3778 - val_loss: 8.4399
+Epoch 3/5
+[1m92/92[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 14ms/step - accuracy: 0.3003 - loss: 4.2899 - val_accuracy: 0.2386 - val_loss: 1.7005
+Epoch 4/5
+[1m92/92[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 13ms/step - accuracy: 0.2522 - loss: 1.7487 - val_accuracy: 0.2895 - val_loss: 1.5934
+Epoch 5/5
+[1m92/92[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 13ms/step - accuracy: 0.2631 - loss: 1.6229 - val_accuracy: 0.2836 - val_loss: 1.6086
