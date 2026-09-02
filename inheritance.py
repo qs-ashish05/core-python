@@ -13,3 +13,17 @@ class CSE(Branch):
         super().__init__(name,no_of_students)
         self.faculty_strength = faculty_strength
 
+    def __str__(self):
+        super().__str__()
+        return f'CSE {self.name} with {self.no_of_students} students'
+
+    def __mro__(self):
+        pass
+
+
+
+cse = CSE("CSE",2,3)
+print(cse)
+print(cse.__mro__)
+
+
