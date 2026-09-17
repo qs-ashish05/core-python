@@ -16,7 +16,10 @@
 # Should be able to use calculate_salary() (bonus logic) and display_info() (language info)
 # Test it by creating one object of each class and calling display_info() on them. Also print TeamLead.__mro__.
 
+
+
 class Employee:
+
     def __init__(self, name, emp_id, base_salary):
         self.name = name
         self.emp_id = emp_id
@@ -25,15 +28,117 @@ class Employee:
     def calculate_salary(self):
         return self.base_salary
 
-    def __str__(self):
-        return f"Emp_id = {self.emp_id}, Emp_name = {self.name} base_salary = {self.base_salary}"
+    def display_info(self):
+        print(f"Name: {self.name}")
+        print(f"Employee ID: {self.emp_id}")
+        print(f"Salary: {self.calculate_salary()}")
 
 
 class Manager(Employee):
+
     def __init__(self, name, emp_id, base_salary, bonus):
-        super.__init__(name, emp_id, base_salary)
         self.bonus = bonus
 
-    def calculate_salary(self):
-        return self.base_salary + self.bonus + self.bonus
+        super().__init__(
+            name,
+            emp_id,
+            base_salary
+        )
 
+    def calculate_salary(self):
+        return self.base_salary + self.bonus
+
+
+class Developer(Employee):
+
+    def __init__(
+        self,
+        name,
+        emp_id,
+        base_salary,
+        programming_language,
+        **kwargs
+    ):
+        self.programming_language = programming_language
+
+        super().__init__(
+            name,
+            emp_id,
+            base_salary
+        )
+
+    def display_info(self):
+        super().display_info()
+        print(f"Programming Language: {self.programming_language}")
+
+
+# class TeamLead(Manager, Developer):
+#
+#     def __init__(
+#         self,
+#         name,
+#         emp_id,
+#         base_salary,
+#         bonus,
+#         programming_language
+#     ):
+#
+#         # Initialize Manager
+#         Manager.__init__(
+#             self,
+#             name,
+#             emp_id,
+#             base_salary,
+#             bonus
+#         )
+#
+#         # Initialize Developer
+#         Developer.__init__(
+#             self,
+#             name,
+#             emp_id,
+#             base_salary,
+#             programming_language
+#         )
+
+class TeamLead(Manager, Developer):
+
+    def __init__( self,  name, emp_id, base_salary, bonus, programming_language):
+        super().__init__(self,
+            name,
+            emp_id,
+            base_salary,
+            bonus,
+            programming_language
+        )
+# Testing
+
+employee = Employee("Aashish", 101, 50000)
+
+manager = Manager("Rahul", 102, 70000, 10000)
+
+developer = Developer("Amit", 103, 60000, "Python")
+
+teamlead = TeamLead(
+    "Raj",
+    104,
+    80000,
+    20000,
+    "Java"
+)
+
+
+print("Employee:")
+employee.display_info()
+
+print("\nManager:")
+manager.display_info()
+
+print("\nDeveloper:")
+developer.display_info()
+
+print("\nTeamLead:")
+teamlead.display_info()
+
+print("\nTeamLead MRO:")
+print(TeamLead.__mro__)
